@@ -1,7 +1,9 @@
-a = int(input("Enter the first number: "))
-b = int(input("Enter the second number: "))
+PINK = "\033[95m"
+RESET = "\033[0m"
+a = int(input(PINK + "Enter the first number: " + RESET))
+b = int(input(PINK + "Enter the second number: " + RESET))
 print("\n")
-print("Addition: ", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
-print("Division:", a / b)
+print(PINK + "Addition: " + str(a + b) + RESET)
+print(PINK + "Subtraction: " + str(a - b) + RESET)
+print(PINK + "Multiplication: " + str(a * b) + RESET)
+print(PINK + "Division: " + str(a / b) + RESET)
